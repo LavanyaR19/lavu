@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Shopping Cart</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="filterCategory('all')">All</a></li>
+                <li><a href="#" onclick="filterCategory('mobiles')">Mobiles</a></li>
+                <li><a href="#" onclick="filterCategory('laptops')">Laptops</a></li>
+                <li><a href="#" onclick="filterCategory('accessories')">Accessories</a></li>
+                <li><a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products" id="product-list">
+            <!-- Products will be inserted dynamically -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
